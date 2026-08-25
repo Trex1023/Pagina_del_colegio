@@ -1,1 +1,45 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="topbar">
+        <a href="main.html">
+            <div id="logo"></div>
+        </a>
+        <div id="titulo">
+            <h1>E.E.S.T. N°8 de Lanús "Almafuerte"</h1>
+        </div>
+    </div>
+    <div id="relleno"></div>
+    <div id="banner">
+        <div id="trackBaner" class="track">
+            <div class="slide-baner" id="banner1">
+                <div id="b1">
+                    <h2 id="b11">Inspirando mentes <br> construyendo el mañana.</h2>
+                </div>
+            </div>
+            <div class="slide-baner" id="banner2">
+            </div>
+            <div class="slide-baner" id="banner3">
+            </div>
+        </div>
+        <div class="Tdots">
+            <div class="Bdot dot active"></div>
+            <div class="Bdot dot"></div>
+            <div class="Bdot dot"></div>
+        </div>
+        <button class="btn-prev" onclick="banerMove(-1)">‹</button>
+        <button class="btn-next" onclick="banerMove(1)">›</button>
+    </div>
+    <div id="curricula"></div>
+    <div id="clendario"></div>
+    <div id="contacto"></div>
+    <div id="foot"></div>
+    <script src="script.js" defer="defer"></script>
+</body>
+</html>

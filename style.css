@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+#topbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.700);
+    z-index: 1000;
+}
+
+#relleno{
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+}
+
+#logo{
+    margin-left: 5vw;
+    width: 90px;
+    height: 90px;
+    background-image: url("imagenes/logo.png");
+    background-size: contain;   
+    background-repeat: no-repeat;
+}
+
+#titulo{
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    margin-right: 25vw;
+}
+
+/*============Banner==============*/
+
+#banner{
+    overflow: hidden;
+    position: relative;
+}
+
+.track{
+    display: flex; 
+    transition: transform 0.35s ease;
+}
+
+.slide-baner{
+    min-height: 35vw;
+    min-width: 100%;
+}
+
+#banner1{
+    display: flex;
+    background-image: url("imagenes/banner1.png");
+    background-size: cover;
+    background-position-y: -23vh;
+    align-items: end;
+    justify-content: end;
+}
+
+#b1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    margin: 60px;
+    transform: scaleY(1.20);
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+#b11{
+    margin: 20px;
+    line-height: 0.85;
+    color: white;
+    font-size: 60px;
+}
+
+#banner2{
+    background-image: url("imagenes/banner2.png");
+    background-size: cover;
+}
+
+#banner3{
+    background-image: url("imagenes/banner3.png");
+    background-size: cover;
+    background-position-y: -10vh;
+}
+
+#curricula{
+    width: 100vw;
+    height: 400px;
+    background-color: white;
+}
+
+#clendario{
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(226, 226, 226);
+}
+
+#contacto{
+    width: 100vw;
+    height: 400px;
+    background-color: white;
+}
+
+#foot{
+    width: 100vw;
+    height: 180px;
+    background-color: black;
+}
+
+
+
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(0, 0, 0, 50%);
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-prev { 
+    left: 10px; 
+}
+
+.btn-next { 
+    right: 10px; 
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.active {
+  background: #333;
+}
+
+.Tdots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
