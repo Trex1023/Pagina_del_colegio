@@ -19,3 +19,24 @@ function updateBdots(currentIndex) {
 Bdots.forEach((dot, i) => {
   dot.onclick = () => goToBaner(i);
 });
+
+//==========Cuerpo===========
+
+let currentclass = 0;
+
+const clases = document.querySelectorAll('.clase');
+
+function updateClases(currentIndex) {
+  clases.forEach(d => d.classList.remove('activa'));
+  clases[currentIndex].classList.add('activa');
+}
+
+clases.forEach((dot, i) => {
+  dot.onclick = () => goToClass(i);
+});
+
+function goToClass(n) {
+  currentclass = n;
+  trackClass.style.transform = `translateX(-${currentclass * 100}%)`;
+  updateClases(currentclass)
+}

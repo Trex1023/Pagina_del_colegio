@@ -84,29 +84,114 @@ html, body {
 }
 
 #banner2{
+    display: flex;
     background-image: url("imagenes/banner2.png");
     background-size: cover;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#b2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    margin: 30px;
+    transform: scaleY(1.20);
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+#b22{
+    margin: 20px;
+    line-height: 0.85;
+    color: white;
+    font-size: 60px;
 }
 
 #banner3{
+    display: flex;
     background-image: url("imagenes/banner3.png");
     background-size: cover;
     background-position-y: -10vh;
+    align-items: flex-end;
 }
 
-#curricula{
+#b3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    margin: 60px;
+    transform: scaleY(1.20);
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+#b33{
+    margin: 20px;
+    line-height: 0.85;
+    color: white;
+    font-size: 60px;
+}
+
+/*==============Cuerpo==============*/
+
+/*selector*/
+.clasesT{
+    display: flex;
+    margin-top: 12px;
+    border-top: 2px black solid;
+}
+
+.bor{
+    border-right: 1px black solid;
+}
+
+.clase{
+    display: flex;
+    width: 25vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+    border-bottom: 1px black solid;
+}
+
+.activa{
+    border-bottom: none;
+    background-color: white;
+}
+
+#basico{
     width: 100vw;
     height: 400px;
     background-color: white;
 }
 
-#clendario{
+#especialidades{
     width: 100vw;
     height: 400px;
     background-color: rgb(226, 226, 226);
 }
 
-#contacto{
+#informatica{
+    width: 100vw;
+    height: 400px;
+    background-color: white;
+}
+
+#electromecanica{
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(226, 226, 226);
+}
+
+#construcciones{
+    width: 100vw;
+    height: 400px;
+    background-color: white;
+}
+
+#infoBasica{
     width: 100vw;
     height: 400px;
     background-color: white;
@@ -128,6 +213,7 @@ html, body {
   transform: translateY(-50%);
   background: rgb(0, 0, 0, 50%);
   border: 1px solid black;
+  color: white;
   border-radius: 50%;
   width: 36px;
   height: 36px;
