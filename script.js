@@ -37,6 +37,6 @@ clases.forEach((dot, i) => {
 
 function goToClass(n) {
   currentclass = n;
-  trackClass.style.transform = `translateX(-${currentclass * 100}%)`;
+  trackClass.style.transform = `translateX(-${currentclass * 100}vw)`;
   updateClases(currentclass)
 }
